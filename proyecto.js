@@ -56,8 +56,6 @@ const savelocal = () => {
 
 JSON.parse(localStorage.getItem("carro"));
 
-// Function to render the cart could go here
-
 verCarrito.addEventListener("click", () => {
     // Call the function to render the cart here
 });
