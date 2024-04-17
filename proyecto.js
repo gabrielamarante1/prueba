@@ -2,6 +2,14 @@ const contenidoTienda = document.getElementById("contenido-tienda")
 const verCarrito = document.getElementById("verCarrito")
 const contenedorModal = document.getElementById("contenedor-modal")
 
+fetch("./db/db.json")
+.then((res) => res.json())
+.then((data) => {
+    const { productos } = data;
+    console.log(data.productos);
+    console.log(productos);
+    renderproductos(productos)
+});
 
 let carrito = JSON.parse(localStorage.getItem("carro")) || [];
 productos.forEach((producto)=> {
