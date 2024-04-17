@@ -1,0 +1,132 @@
+.contenedor-navegacion {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #333;
+}
+
+.logo {
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.ver-carrito {
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.contenido-tienda {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.tarjeta {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.tarjeta > img {
+    width: 80%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    color: #555;
+    font-size: 18px;
+}
+
+.tarjeta button {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.tarjeta button:hover {
+    background-color: #555;
+}
+
+.contenedor-modal {
+    width: 80%;
+    margin: 50px auto;
+    max-height: 80vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 70px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cabecera-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.titulo-cabecera-modal {
+    font-size: 24px;
+}
+
+.boton-cerrar-cabecera-modal {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.contenedor-modal > .contenido-modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 10px 0;
+}
+
+.contenedor-modal > div > img {
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+}
+
+.total-contenido {
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+}
+.delete-product {
+    cursor: pointer;
+    font-size: 16px;
+}
